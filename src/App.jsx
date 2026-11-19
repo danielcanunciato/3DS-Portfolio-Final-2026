@@ -8,6 +8,7 @@ export default function App() {
 
       <h1>PORTFÓLIO COINTRIVE</h1>
       <p className="name">Daniel Camilo Anunciato Santos</p>
+      <p>Sou um estudante de programação na escola E.E. P.E.I. Josué Benedicto Mendes e futuramente técnico em Desenvolvimento de Sistemas, tenho 18 anos e um aspirante a desenvolvedor de sistemas e/ou engenheiro de software.</p>
 
       <div className="intro-info">
 
