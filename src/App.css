@@ -1,0 +1,114 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --textcolor-title: gold;
+    --textcolor-para: white;
+    --bg-color: #18111e;
+    --cards-color: #342c3a;
+    --images-border-color: rgb(192, 18, 18);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--bg-color);
+    user-select: none;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    font-family: "Arial Bold", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    color: var(--textcolor-title);
+}
+
+p {
+    font-size: 1.2rem;
+    color: var(--textcolor-para);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.name {
+    text-align: center;
+}
+
+.intro-info {
+    background: #482226;
+    margin-bottom: 69px;
+
+    padding: 20px;
+
+    border-radius: 0 0 40px 40px;
+    border: 8px inset rgb(60, 5, 5);
+
+    img {
+        filter: drop-shadow(0 0 8px rgb(235, 93, 93));
+        margin-bottom: -25px;
+        margin-top: -20px;
+    }
+}
+
+.ct-scr-template {
+    padding: 18px;
+    background: var(--cards-color);
+    margin-bottom: 40px;
+    border-radius: 40px 0 0 40px;
+
+    filter: drop-shadow(0 0 10px rgb(37, 37, 37));
+
+    h1 {
+        text-transform: uppercase;
+        text-decoration: underline;
+
+        font-size: 3rem;
+
+        margin-top: -10px;
+        margin-bottom: -4px;
+    }
+
+    img {
+        border: 8px solid var(--images-border-color);
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+}
+
+.ods {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+    img {
+        filter: none;
+        width: 120px;
+        height: 120px;
+        margin-right: 10px;
+        margin-left: 10px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 6px;
+        border: 4px solid white;
+    }
+}
