@@ -46,7 +46,34 @@ img {
 }
 
 .name {
+    font-size: 1.5rem;
     text-align: center;
+    color: lime;
+    font-weight: bold;
+}
+
+.name span {
+    display: inline-block;
+    animation: wave 4s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    color: gold;
+    font-weight: bold;
+}
+
+.title span {
+    display: inline-block;
+    animation: wave-title 1.2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.title-items {
+    margin-top: 80px;
+    margin-bottom: -25px;
 }
 
 .intro-info {
@@ -111,4 +138,31 @@ img {
         border-radius: 6px;
         border: 4px solid white;
     }
+}
+
+@keyframes wave {
+  0%, 100% {
+    color: lime;
+    transform: translateY(-20px) rotate(5deg);
+  }
+
+  25% {
+    color: red;
+  }
+
+  50% {
+    color: white;
+    transform: translateY(-100px) rotate(-5deg);
+  }
+}
+@keyframes wave-title {
+  0%, 100% {
+    color: gold;
+    transform: translateY(0) rotate(5deg);
+  }
+
+  50% {
+    color: white;
+    transform: translateY(-4px) rotate(-5deg);
+  }
 }
